@@ -52,19 +52,6 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>rasmus-LSD_Case3_Contract</id>
-            <url>https://packagecloud.io/rasmus/LSD_Case3_Contract/maven2</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
     <build>
         <plugins>
             <plugin>
