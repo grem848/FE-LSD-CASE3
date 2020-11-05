@@ -5,6 +5,4 @@ jdk:
 
 sudo: false # faster builds
 
-script:
-  - "mvn clean build"
-  - 'echo "nice"'
+script: "mvn clean build"
