@@ -1,11 +1,10 @@
 language: java
 
 jdk:
-  - openjdk8
-
-sudo: false # faster builds
+  - openjdk11
 
 before_install:
   - chmod +x mvnw
 
-script: "mvn build"
+script:
+  - ./mvnw clean install
