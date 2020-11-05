@@ -5,4 +5,7 @@ jdk:
 
 sudo: false # faster builds
 
+before_install:
+  - chmod +x mvnw
+
 script: "mvn clean build"
