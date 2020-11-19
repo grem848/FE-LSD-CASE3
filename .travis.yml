@@ -8,3 +8,9 @@ before_install:
 
 script:
   - ./mvnw clean install
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: 2fcf171d-0ac3-4e9c-847f-c78bfb9d005a
+  app: frontend-build
