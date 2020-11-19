@@ -11,5 +11,6 @@ script:
 
 deploy:
   provider: heroku
-  api_key: 2fcf171d-0ac3-4e9c-847f-c78bfb9d005a
-  app: frontend-build
+  api_key: $HEROKU_API_KEY
+  app:
+    main: frontend-build
