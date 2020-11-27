@@ -1,17 +1,38 @@
-package dk.lsd.frontendlsd;
+package dk.lsd.frontendlsd.booking;
+
 
 import booking.dto.*;
+import booking.entity.Address;
+import booking.entity.Car;
+import booking.entity.Place;
+import booking.entity.Type;
 import booking.eto.InvalidInputException;
 import booking.eto.NotFoundException;
 import booking.eto.PersistanceFailedException;
 import booking.eto.UnavailableException;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
 
-public class test implements booking.Contract{
+@Service
+
+@RequiredArgsConstructor
+
+public class BookingService implements booking.Contract {
+
     @Override
     public Collection<CarSummary> listAvailableCars(BookingCriteria bookingCriteria) throws NotFoundException, InvalidInputException {
-        return null;
+        Collection<CarSummary>list = new ArrayList();
+
+        list.add(new CarSummary(new Car( "vin",  "licensePlate", Type.A ,  10,  85,  true),
+                        new Place( "name", new Address("streetAddress",  2730,  "city"),  true)));
+        return list;
     }
 
     @Override
