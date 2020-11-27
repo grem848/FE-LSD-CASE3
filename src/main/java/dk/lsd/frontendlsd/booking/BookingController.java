@@ -8,13 +8,14 @@ import booking.eto.UnavailableException;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.json.GsonJsonParser;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
-
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -37,9 +38,9 @@ public class BookingController {
     }
 
     @PostMapping("/createBooking")
-    public ResponseEntity<BookingDetails>createBooking(
-            @RequestBody BookingCriteria bookingCriteria, Double aDouble, DriverDetails driverDetails, EmployeeDetails employeeDetails, CarSummary carSummary) throws InvalidInputException {
-        return ResponseEntity.ok(bookingService.createBooking( bookingCriteria, aDouble, driverDetails,  employeeDetails,  carSummary));
+    public ResponseEntity<Object>createBooking(
+            @RequestBody CreateBookingWrapper body) throws InvalidInputException {
+        return ResponseEntity.ok(bookingService.createBooking( body.getBookingCriteria(), body.getPrice(), body.getDriverDetails(),  body.getEmployeeDetails(),  body.getCarSummary()));
     }
 
     @PostMapping("/saveBooking")

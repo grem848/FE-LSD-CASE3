@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "bb69ec3f-ae81-41af-b436-14ba7a356d42",
+		"name": "LSD-CASE3-frontend-Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listAvailableCars",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pickUpPlace\": {\r\n        \"name\": \"name\",\r\n        \"address\": {\r\n            \"streetAddress\": \"persil\",\r\n            \"postalCode\": \"2703\",\r\n            \"city\": \"helrev\"\r\n        },\r\n        \"active\": \"true\"\r\n    },\r\n    \"deliveryPlace\": {\r\n        \"name\": \"name\",\r\n        \"address\": {\r\n            \"streetAddress\": \"persil\",\r\n            \"postalCode\": \"2703\",\r\n            \"city\": \"helrev\"\r\n        },\r\n        \"active\": \"true\"\r\n    },\r\n    \"pickUpTime\": \"2014-01-01T00:00:00\",\r\n    \"deliveryTime\": \"2014-01-01T00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/booking/listAvailableCars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"listAvailableCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "calculateFee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pickUpPlace\": {\r\n        \"name\": \"name\",\r\n        \"address\": {\r\n            \"streetAddress\": \"persil\",\r\n            \"postalCode\": \"2703\",\r\n            \"city\": \"helrev\"\r\n        },\r\n        \"active\": \"true\"\r\n    },\r\n    \"deliveryPlace\": {\r\n        \"name\": \"name\",\r\n        \"address\": {\r\n            \"streetAddress\": \"persil\",\r\n            \"postalCode\": \"2703\",\r\n            \"city\": \"helrev\"\r\n        },\r\n        \"active\": \"true\"\r\n    },\r\n    \"pickUpTime\": \"2014-01-01T00:00:00\",\r\n    \"deliveryTime\": \"2014-01-01T00:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/booking/calculateFee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"calculateFee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingCriteria\": {\r\n        \"pickUpPlace\": {\r\n            \"name\": \"name\",\r\n            \"address\": {\r\n                \"streetAddress\": \"persil\",\r\n                \"postalCode\": \"2703\",\r\n                \"city\": \"helrev\"\r\n            },\r\n            \"active\": \"true\"\r\n        },\r\n        \"deliveryPlace\": {\r\n            \"name\": \"name\",\r\n            \"address\": {\r\n                \"streetAddress\": \"persil\",\r\n                \"postalCode\": \"2703\",\r\n                \"city\": \"helrev\"\r\n            },\r\n            \"active\": true\r\n        },\r\n        \"pickUpTime\": \"2014-01-01T00:00:00\",\r\n        \"deliveryTime\": \"2014-01-01T00:00:00\"\r\n    },\r\n    \"price\": 234.0,\r\n    \"driverDetails\": {\r\n        \"driver\": {\r\n            \"name\": \"driver\",\r\n            \"address\": {\r\n                \"streetAddress\": \"nicestreet\",\r\n                \"postalCode\": 2703,\r\n                \"city\": \"Helrev\"\r\n            },\r\n            \"email\": \"email\",\r\n            \"dateOfBirth\": \"2016-01-01\",\r\n            \"socialSecurityNumber\": 1234,\r\n            \"active\": true,\r\n            \"licenseNo\": 12443453463\r\n        }\r\n    },\r\n    \"employeeDetails\": {\r\n        \"name\": \"employee\",\r\n        \"address\": {\r\n            \"streetAddress\": \"nicestreet\",\r\n            \"postalCode\": 2703,\r\n            \"city\": \"Helrev\"\r\n        },\r\n        \"email\": \"email\",\r\n        \"dateOfBirth\": \"2016-01-01\",\r\n        \"socialSecurityNumber\": 12345\r\n    },\r\n    \"carSummary\": {\r\n        \"car\": {\r\n            \"vin\": \"1234\",\r\n            \"licensePlate\": \"1234\",\r\n            \"type\": \"A\",\r\n            \"price\": 12.0,\r\n            \"noOfSeats\": 400,\r\n            \"active\": true\r\n        },\r\n        \"place\": {\r\n            \"name\": \"place\",\r\n            \"address\": {\r\n                \"streetAddress\": \"nicestreet\",\r\n                \"postalCode\": 2703,\r\n                \"city\": \"Helrev\"\r\n            },\r\n            \"active\": true\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/booking/createBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingCriteria\": {\r\n        \"pickUpPlace\": {\r\n            \"name\": \"name\",\r\n            \"address\": {\r\n                \"streetAddress\": \"persil\",\r\n                \"postalCode\": \"2703\",\r\n                \"city\": \"helrev\"\r\n            },\r\n            \"active\": \"true\"\r\n        },\r\n        \"deliveryPlace\": {\r\n            \"name\": \"name\",\r\n            \"address\": {\r\n                \"streetAddress\": \"persil\",\r\n                \"postalCode\": \"2703\",\r\n                \"city\": \"helrev\"\r\n            },\r\n            \"active\": true\r\n        },\r\n        \"pickUpTime\": \"2014-01-01T00:00:00\",\r\n        \"deliveryTime\": \"2014-01-01T00:00:00\"\r\n    },\r\n    \"price\": 234.0,\r\n    \"driverDetails\": {\r\n        \"driver\": {\r\n            \"name\": \"driver\",\r\n            \"address\": {\r\n                \"streetAddress\": \"nicestreet\",\r\n                \"postalCode\": 2703,\r\n                \"city\": \"Helrev\"\r\n            },\r\n            \"email\": \"email\",\r\n            \"dateOfBirth\": \"2016-01-01\",\r\n            \"socialSecurityNumber\": 1234,\r\n            \"active\": true,\r\n            \"licenseNo\": 12443453463\r\n        }\r\n    },\r\n    \"employeeDetails\": {\r\n        \"name\": \"employee\",\r\n        \"address\": {\r\n            \"streetAddress\": \"nicestreet\",\r\n            \"postalCode\": 2703,\r\n            \"city\": \"Helrev\"\r\n        },\r\n        \"email\": \"email\",\r\n        \"dateOfBirth\": \"2016-01-01\",\r\n        \"socialSecurityNumber\": 12345\r\n    },\r\n    \"carSummary\": {\r\n        \"car\": {\r\n            \"vin\": \"1234\",\r\n            \"licensePlate\": \"1234\",\r\n            \"type\": \"A\",\r\n            \"price\": 12.0,\r\n            \"noOfSeats\": 400,\r\n            \"active\": true\r\n        },\r\n        \"place\": {\r\n            \"name\": \"place\",\r\n            \"address\": {\r\n                \"streetAddress\": \"nicestreet\",\r\n                \"postalCode\": 2703,\r\n                \"city\": \"Helrev\"\r\n            },\r\n            \"active\": true\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/booking/saveBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"saveBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1  \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/booking/cancelBooking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"booking",
+						"cancelBooking"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

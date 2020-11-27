@@ -42,7 +42,7 @@ public class BookingService implements booking.Contract {
 
     @Override
     public BookingDetails createBooking(BookingCriteria bookingCriteria, Double aDouble, DriverDetails driverDetails, EmployeeDetails employeeDetails, CarSummary carSummary) throws InvalidInputException {
-        return null;
+        return new BookingDetails((long) 1, carSummary, driverDetails, employeeDetails, bookingCriteria, 345.0, 567.0);
     }
 
     @Override
