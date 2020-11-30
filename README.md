@@ -11,7 +11,7 @@ Link to deployed solution:
 
 [![Build Status](https://travis-ci.com/grem848/FE-LSD-CASE3.svg?branch=main)](https://travis-ci.com/grem848/FE-LSD-CASE3)
 
-## Handover Documentation
+## Handover Documentation - Frontend
 
 Our three separated projects are listed here:
 
