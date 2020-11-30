@@ -21,6 +21,12 @@ Our three separated projects are listed here:
 
 The contract is what both teams have been using to follow the same structure of classes and methods. The contract is hosted on [packagecloud](https://packagecloud.io/lsdckmwn/lsdcontract) and is used as a dependency in both projects.
 
+### General & How to use
+
+The frontend project is a REST API, that allows for a client to sent requests to it. It was built using Spring Boot, and takes in JSON requests.
+
+[We have created a Postman Collection, that can be used to send requests and receive responses.](https://github.com/grem848/FE-LSD-CASE3/blob/main/LSD-CASE3-frontend-Client.postman_collection.json)
+
 ### CI/CD
 
 For continuous integration and continuous deployment, we have used a combination of Travis CI and Heroku.
