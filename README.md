@@ -96,4 +96,4 @@ We will make sure of availability, and take responsibility for the service.
 
 - Uptime - 99.99%
 - Turn Around Time - up to 30 days
-- Mean Time to Recovry - up to 30 days
+- Mean Time to Recovery - up to 30 days
