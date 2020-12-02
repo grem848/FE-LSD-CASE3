@@ -92,5 +92,8 @@ logging.level.org.springframework.web=INFO
 This creates a local log file and logs any responses and requests made, and their content, using the zalando.logbook dependency.
 
 ### SLA proposition
+We will make sure of availability, and take responsibility for the service.
 
-???
+- Uptime - 99.99%
+- Turn Around Time - up to 30 days
+- Mean Time to Recovry - up to 30 days
