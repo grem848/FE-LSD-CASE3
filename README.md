@@ -23,6 +23,13 @@ The contract is what both teams have been using to follow the same structure of 
 
 ### General & How to use
 
+We recommend using the hosted solution, which is linked above.
+If you want to look at the project locally, follow these simple steps:
+- Open your preferred IDE and the project
+- Build
+- Run
+
+
 The frontend project is a REST API, that allows for a client to sent requests to it. It was built using Spring Boot, and takes in JSON requests.
 
 [We have created a Postman Collection, that can be used to send requests and receive responses.](https://github.com/grem848/FE-LSD-CASE3/blob/main/LSD-CASE3-frontend-Client.postman_collection.json)
