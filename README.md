@@ -101,6 +101,7 @@ This creates a local log file and logs any responses and requests made, and thei
 ### SLA proposition
 We will make sure of availability, and take responsibility for the service.
 
-- Uptime - 99.99%
-- Turn Around Time - up to 30 days
-- Mean Time to Recovery - up to 30 days
+- Uptime/availability (usually percentage of all time) - 90%
+- Mean response time (average time to serve answer) - up to 30 days
+- Mean time to recover ( time to recover after outage) - up to 30 days
+- Failure frequency (number of failures/ timeouts over time) - 1-5 failures/week
