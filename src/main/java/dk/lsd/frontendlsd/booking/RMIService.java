@@ -9,7 +9,7 @@ import java.rmi.RemoteException;
 
 public class RMIService {
     // name =  rmi:// + ServerIP +  /EngineName;
-    private String remoteEngine = "rmi://car-renting-service.herokuapp.com/BookingServices";
+    private String remoteEngine = "rmi://207.154.197.222/BookingServices";
 
 
     // static variable single_instance of type Singleton 
