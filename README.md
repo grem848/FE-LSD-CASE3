@@ -11,7 +11,7 @@ Link to deployed solution:
 
 [![Build Status](https://travis-ci.com/grem848/FE-LSD-CASE3.svg?branch=main)](https://travis-ci.com/grem848/FE-LSD-CASE3)
 
-## Handover Documentation - Frontend
+## Handover Documentation
 
 Our three separated projects are listed here:
 
@@ -23,16 +23,21 @@ The contract is what both teams have been using to follow the same structure of 
 
 ### General & How to use
 
-We recommend using the hosted solution, which is linked above.
+We recommend using the hosted solution, which is has a link above.
+
+#### To request access to the Heroku app and view our deployed Heroku setup please contact us, remember you are required to have a Heroku account
+
 If you want to look at the project locally, follow these simple steps:
+
+- Clone the project
 - Open your preferred IDE and the project
 - Build
 - Run
+- API is now hosted on localhost:8080
 
+The frontend project is a REST API, that allows for a client to sent requests to it. It was built using Spring Boot, and takes in JSON requests. The backend project takes care of database and business logic, and has setup a RMI service that the frontend can communicate with.
 
-The frontend project is a REST API, that allows for a client to sent requests to it. It was built using Spring Boot, and takes in JSON requests.
-
-[We have created a Postman Collection, that can be used to send requests and receive responses.](https://github.com/grem848/FE-LSD-CASE3/blob/main/LSD-CASE3-frontend-Client.postman_collection.json)
+[We have created a Postman Collection, that can be used to send requests and receive responses, join it by clicking here.](https://app.getpostman.com/join-team?invite_code=8d814a09b48d50ff68a6c40616dc665c)
 
 ### CI/CD
 
@@ -42,7 +47,7 @@ For access to the Heroku app pipeline, you will need to be added by us.
 
 We have set it up so Travis builds our project and checks if the build is valid, then if the build is successful Travis will then deploy to our Heroku app. For this purpose we created a Heroku app named lsd-case-3-fe that is our frontend project hosted in the cloud.
 
-Heroku only deploys if Travis is successful.
+Heroku only deploys if Travis builds the project successfully.
 
 **[Here is our Travis config:](https://github.com/grem848/FE-LSD-CASE3/blob/main/.travis.yml)**
 
@@ -99,9 +104,34 @@ logging.level.org.springframework.web=INFO
 This creates a local log file and logs any responses and requests made, and their content, using the zalando.logbook dependency.
 
 ### SLA proposition
-We will make sure of availability, and take responsibility for the service.
 
-- Uptime/availability (usually percentage of all time) - 90%
-- Mean response time (average time to serve answer) - up to 30 days
-- Mean time to recover ( time to recover after outage) - up to 30 days
-- Failure frequency (number of failures/ timeouts over time) - 1-5 failures/week
+[View Heroku's Subscription Agreement here](https://www.heroku.com/policy/salesforce-heroku-msa)
+
+#### Service Description
+
+The service must provide the functionality to see and book cars and manage bookings.
+We will make sure of availability, and take responsibility for the service functionality.
+
+#### Uptime/availability (percentage of all time) - 90%
+
+Heroku takes care of the deployment of our application, so any issues with their services is not our responsibility, and will require you to contact Heroku. The Heroku dyno container keeps our application alive, and takes care of all monitoring and logging. To monitor the application, contact us for access.
+
+#### Mean response time (average time to serve answer) - up to 7 business days
+
+If you have questions or need answers on anything concerning the application, contact us and we will return to you within a 7 business days.
+
+#### Mean time to recover ( time to recover after outage) - up to 7 business days
+
+During an outage or an error with the application, you are welcome to contact us, we will respond within 7 business days. For Heroku issues contact them.
+
+#### Failure frequency (number of failures/ timeouts over time) - 1-5 failures/week
+
+If you experience a higher failure frequency, please contact us and we will return to you within 7 business days. For Heroku issues contact them.
+
+<br>
+
+### Contact us
+
+If you have any questions feel free to contact us at cph-rf43@cphbusiness.dk, and we will return to you within 7 business days.
+
+###### Fixes, changes and any reports or documentation will ONLY be provided upon contact with our support center.
