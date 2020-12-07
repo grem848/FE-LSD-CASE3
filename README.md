@@ -17,7 +17,7 @@ Our three separated projects are listed here:
 
 - Contract: [https://github.com/moh682/LSD-Case3](https://github.com/moh682/LSD-Case3)
 - Frontend: [https://github.com/grem848/FE-LSD-CASE3](https://github.com/grem848/FE-LSD-CASE3)
-- Backend: [https://github.com/SimonBojesen/BA_LSD_CASE3](https://github.com/SimonBojesen/BA_LSD_CASE3)
+- Backend: [https://github.com/SimonBojesen/BA_LSD_CASE3](https://github.com/SimonBojesen/BA_LSD_CASE3/tree/main)
 
 The contract is what both teams have been using to follow the same structure of classes and methods. The contract is hosted on [packagecloud](https://packagecloud.io/lsdckmwn/lsdcontract) and is used as a dependency in both projects.
 
